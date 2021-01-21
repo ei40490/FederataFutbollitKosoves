@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Linku per Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>FFK</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="FFK logo">
+            </div>
+
+            <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="contactus">
+                <h1>Write us a letter</h1>
+                <form name="form" onsubmit="return validateForm()">
+                    <input type="text" placeholder="Full name" name="name">
+                    <input type="email" placeholder="Email" name="email">
+                    <input type="text" placeholder="Enter message" name="message">
+                    <button type="submit" class="contact-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div class="push-footer-bottom"></div>
+
+    <footer>
+        <div class="container">
+            <div class="grid">
+                    <div class="contact-info">
+                            <p>
+                                Tel: +123 456 789 <br>
+                                Email: example@example.com <br>
+                                Address: Mitrovice, Mbretresha Teute nr.4 <br>
+                            </p>
+                        </div>
+                        <div class="social-links-footer">
+                                <p>Rrjetet sociale:</p>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function validateForm() {
+            let getName = document.forms['form']['name'];
+            let getEmail = document.forms['form']['email'];
+            let getMessage = document.forms['form']['message'];
+
+            if(getName.value == '') {
+                alert('Name must be filled out');
+                return false;
+            }
+
+            if(getEmail.value == '') {
+                alert('Email must be filled out');
+                return false;
+            }
+
+            if(getMessage.value == '') {
+                alert('Message must be filled out');
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Linku per Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>FFK</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="FFK logo">
+            </div>
+
+            <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+            <div class="slideshow-container">
+                <div class="slides fade">
+                    <img src="images/banner1.jpg" alt="ffk">
+                    <div class="text">Federata e Futbollit te Kosoves</div>
+                </div>
+                <div class="slides fade">
+                    <img src="images/banner2.jpg" alt="ffk">
+                    <div class="text">Kliko te Lajmet per Info rreth protestes</div>
+                </div>
+                <div class="slides fade">
+                    <img src="images/banner3.jpg" alt="ffk">
+                    <div class="text">Kosova team</div>
+                </div>
+            </div>
+    </main>
+
+    <section>
+        <div class="container info-section">
+            <div class="info">
+                <h3>Ndeshjet</h3>
+                <p>11 maj, 2019 – Ndeshjet e javës së 32-të në IPKO Superligë do të zhvillohen në mesjavën e ardhshme.
+                    Të mërkurën do të luhen katër ndeshje mjaft interesante,në garën për titull,
+                    ashtu edhe në atë për t’iu shmangur barazhit, e ku pa dyshim vëmendja do të jetë e përqendruar në derbin që do të zhvillohet në stadiumin “Zahir Pajaziti” në Podujevë, ku Llapi do të jetë mikpritës i Feronikelit. 
+                </p>
+                <button class="btn">Lexo me shume</button>
+            </div>
+
+            <div class="info">
+                    <h3>Transferat</h3>
+                    <p><Strong>Flamurtari</Strong><br>
+                        Iliasa Zylfiu ( Radnik Surdulica) Nassir Ibrahimi (Gana), Flamur Neziri, Lorik Maxhuni, Nash Quanasa, Gentrit Dumani, Arbnor Zeqiri, Getoar Dragusha, Agron Bruqi, Adem Maliqi, Alban Reka.<br/>
+                        <Strong>Drenica</Strong><br> 
+                        Sonko Bubaccar (Gambia), Gibba Kabba (Gambia) Jannen Osman (Gambia) ), Diar Mustafa, Rrahim Nimani, Qemail Elshani, Isa Eminhazeri, Vigan Rexha, Besart Islamaj, Altin Vojvoda.<br/>
+                        <strong>KEK-u</strong><br>
+                        Fatos Zeqiri (Brentwood Town-Angli), Drilon Tejeci (Kosova Munchen), Visar Hashani (Kanada).<br/>
+                    </p>
+                    <button class="btn">Lexo me shume</button>
+                </div>
+
+                <div class="info">
+                        <h3>info</h3>
+                        <p>
+                                <strong>IPKO Superliga – Java e 32-të</strong><br>
+                                E mërkurë, 15.05.2019 ora 16.00 <br/>
+                                Prishtina – Trepça ‘89
+                                Llapi – Feronikeli
+                                Drita – Flamurtari
+                                Drenica – Ballkani
+                                <p>E enjte, 16.05.2019 ora 16.00
+                                Gjilani – Liria
+                                KEK-u – Ferizaj
+                                </p>
+                        </p>
+                        <button class="btn">Lexo me shume</button>
+                    </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="grid">
+                    <div class="contact-info">
+                            <p>
+                                Tel: +123 456 789 <br>
+                                Email: example@example.com <br>
+                                Address: Mitrovice, Mbretresha Teute nr.4 <br>
+                            </p>
+                        </div>
+                        <div class="social-links-footer">
+                                <p>Rrjetet sociale:</p>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var imgSlides = document.getElementsByClassName("slides");
+        for (i = 0; i < imgSlides.length; i++) {
+            imgSlides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > imgSlides.length) {slideIndex = 1}    
+        imgSlides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 3000); 
+        }
+    </script>
+</body>
+</html>
